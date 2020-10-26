@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bài 2</title>
+</head>
+<body>
+<!-- Bài 2: Tính giai thừa của một số nguyên dương -->
+<script>
+    function giaiThua(number) {
+        if (number === 0 || number === 1) return 1;
+
+        let result = 1;
+        for (let i = 2; i <= number; i++) {
+            result *= i;
+        }
+        return result;
+    }
+
+    let number = +prompt("Enter number");
+    alert(number + "!= " + giaiThua(number));
+</script>
+</body>
+</html>

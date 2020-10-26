@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bài 1</title>
+</head>
+<body>
+<!-- Bài 1: In dãy Finonaci -->
+<script>
+    let current = 0;
+    let next = 1;
+    let count = 0;
+    let total;
+    while (count < 50) {
+        total = current + next;
+        document.write(current + "</br>");
+        current = next;
+        next = total;
+        count++;
+    }
+</script>
+</body>
+</html>

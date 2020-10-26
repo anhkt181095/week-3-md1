@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bài 3</title>
+</head>
+<body>
+<!-- Bài 3: Viết một chương trình khai báo một mảng ký tự và kích thước của mảng. Chương trình này đếm số ký tự số trong mảng. -->
+<script>
+    let charaterArr = ["4", 4, "6", "z", "M", "q", 2, "j"];
+    let result = charaterArr.reduce(function(sum, element) {
+        return (
+            sum +
+            (typeof element === "string" && element >= "1" && element <= "9")
+        );
+    }, 0);
+    document.write("Số ký tự số trong mảng là " + result);
+</script>
+</body>
+</html>
